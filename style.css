@@ -61,3 +61,38 @@ pre {
   white-space: pre-wrap;
   word-break: break-word;
 }
+/* Animación flicker para borde */
+@keyframes borderFlicker {
+  0%, 100% {
+    box-shadow: 0 0 20px #00ff00;
+    border-color: #00ff00;
+  }
+  50% {
+    box-shadow: 0 0 10px #00cc00;
+    border-color: #00cc00;
+  }
+}
+
+/* Animación flicker para texto */
+@keyframes textFlicker {
+  0%, 100% {
+    text-shadow: 0 0 10px #00ff00;
+    color: #00ff00;
+  }
+  50% {
+    text-shadow: 0 0 4px #00cc00;
+    color: #00cc00;
+  }
+}
+
+/* Aplicamos las animaciones */
+.terminal {
+  animation: borderFlicker 2s infinite alternate;
+}
+
+h1,
+pre,
+button,
+input {
+  animation: textFlicker 1.5s infinite alternate;
+}
