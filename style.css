@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'Share Tech Mono', monospace;
+  color: #00ff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.terminal {
+  text-align: center;
+  border: 2px solid #00ff00;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ff00;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #00ff00;
+  color: #000;
+}
+
+pre {
+  margin-top: 1rem;
+  background-color: #000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 1rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
